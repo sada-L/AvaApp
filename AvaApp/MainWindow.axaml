@@ -3,10 +3,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" 
+        x:Class="AvaApp.MainWindow"
+        Title="AvaApp"
 		d:DesignWidth="800" 
 		d:DesignHeight="450"
-        x:Class="AvaApp.MainWindow"
-        Title="AvaApp">
+		MaxWidth="800"
+		MaxHeight="450"
+		MinWidth="800"
+		MinHeight="450">
 	<Border 
 		Margin="175,50,175,50"
 		BorderBrush="Black"
@@ -16,50 +20,73 @@
 				<RowDefinition Height="*"></RowDefinition>
 				<RowDefinition Height="*"></RowDefinition>
 				<RowDefinition Height="*"></RowDefinition>
+				<RowDefinition Height="*"></RowDefinition>
+				<RowDefinition Height="*"></RowDefinition>
 			</Grid.RowDefinitions>
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="*"></ColumnDefinition>
 			</Grid.ColumnDefinitions>
 			<Border
-				Grid.Row="0"
-				Background="White"
+				Grid.Row="1"
+				Background="#ff00ff"
 				BorderBrush="Black"
 				BorderThickness="4">
 				<TextBlock 
 					FontFamily="Arial"
 					FontWeight="DemiBold"
 					TextAlignment="Center"
-					FontSize="40">
-					IP2K-22
-				</TextBlock>
-			</Border>
-			<Border
-				Grid.Row="1"
-				Background="Blue"
-				BorderBrush="Black"
-				BorderThickness="4">
-				<TextBlock
-					FontFamily="Arial"
-					FontWeight="DemiBold"
-					TextAlignment="Left"
-					FontSize="40"
-					Margin="10">
-					Dyagilev Felix
+					FontSize="17"
+					VerticalAlignment="Center">
+					ИП2к-22
 				</TextBlock>
 			</Border>
 			<Border
 				Grid.Row="2"
-				Background="Red"
+				Background="#ffffff"
 				BorderBrush="Black"
 				BorderThickness="4">
 				<TextBlock
+					VerticalAlignment="Bottom"
+					FontFamily="Arial"
+					FontWeight="DemiBold"
+					TextAlignment="Center"
+					FontSize="17">
+Обеспечение качества функционирования 
+компьютерных систем
+				</TextBlock>
+			</Border>
+			<Border 
+				Grid.Row="3"
+				Background="#ff00ff"
+				BorderBrush="Black"
+				BorderThickness="4">
+				<TextBlock
+					VerticalAlignment="Bottom"
 					FontFamily="Arial"
 					FontWeight="DemiBold"
 					TextAlignment="Right"
-					FontSize="40">
-					Maslov R.A.
+					FontSize="17">
+					Дягилев Ф.А.
 				</TextBlock>
 			</Border>
+			<Border
+				Grid.Row="0"
+				Background="#00ffff"
+				BorderBrush="Black"
+				BorderThickness="4">
+			</Border>
+			<Border
+				Grid.Row="4"
+				Background="#00ffff"
+				BorderBrush="Black"
+				BorderThickness="4">
+			</Border>
+			<Button 
+				Grid.Row="5"
+				Margin="20"
+				Name="EnterButton">
+				Окно
+			</Button>
 		</Grid>
 	</Border>
 </Window>
