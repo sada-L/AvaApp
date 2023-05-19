@@ -22,12 +22,29 @@
 			BorderThickness="5"
 			Margin="0"
 			Width="400"
-			Height="320">
-			<Image
-				Height="300"
-				Source="C:\Users\g-g1g\source\repos\sada-L\AvaApp\AvaApp\Image\image1.jpg">
-			</Image>
+			Height="320">	
 		</Border>
+		<Image
+			Name="Image1"
+			IsVisible="true"
+			Grid.Row="1"
+			Height="300"
+			Source="D:\Program\vs\source\repos\AvaApp\AvaApp\Image\image1.jpg">
+		</Image>
+		<Image
+			Name="Image2"
+			IsVisible="False"
+			Grid.Row="1"
+			Height="300"
+			Source="D:\Program\vs\source\repos\AvaApp\AvaApp\Image\image2.png">
+		</Image>
+		<Image
+			Name="Image3"
+			IsVisible="False"
+			Grid.Row="1"
+			Height="300"
+			Source="D:\Program\vs\source\repos\AvaApp\AvaApp\Image\image3.jpg">
+		</Image>
 		<Button
 			HorizontalAlignment="Right"
 			Grid.Row="0"

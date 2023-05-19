@@ -10,7 +10,7 @@ namespace AvaApp
             InitializeComponent();
            
             ExitButton1.Click += EnterButton_Click;
-            /*InitImageComboBox();*/
+            ImageComboBox.SelectionChanged += ImageComboBox_SelectionChanged;
         }
 
         private void EnterButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
@@ -20,15 +20,18 @@ namespace AvaApp
             this.Close();
 
         }
-/*        private void InitImageComboBox()
-        {
-            
+        private void Load()
+        { 
             switch (ImageComboBox.SelectedIndex)
             {
-                case 0: Image1.IsVisible = true; break;
-*//*                case 1: Image2.IsVisible = true; break;
-                case 2: Image3.IsVisible = true; break;*//*
+                case 0: Image1.IsVisible = true; Image2.IsVisible = false; Image3.IsVisible = false; break;
+                case 1: Image2.IsVisible = true; Image1.IsVisible = false; Image3.IsVisible = false; break;
+                case 2: Image3.IsVisible = true; Image1.IsVisible = false; Image2.IsVisible = false; break;
             };
-        }*/
+        }
+        private void ImageComboBox_SelectionChanged(object? sender, SelectionChangedEventArgs e)
+        {
+            Load();
+        }
     }
 }
